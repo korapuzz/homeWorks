@@ -1,6 +1,5 @@
 my_list = list(map(int,input("Введите числа через пробел: ").split()))
 my_list.append(-1)
-count = len(my_list)
 k = 0
 while True:
     if my_list[k] < 0:
