@@ -15,9 +15,9 @@ not_primes = []
 for number in numbers:
     if number != 1:
         if isPrime(number):
-            primes.append(number)
-        else:
             not_primes.append(number)
+        else:
+            primes.append(number)
 
 print("Primes", primes)
 print("Not Primes", not_primes)
