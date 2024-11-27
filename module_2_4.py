@@ -1,11 +1,6 @@
 def isPrime(num):
     t = num // 2 + 1
-    res = True
-    for i in range(2,t):
-        if num % i == 0:
-            res = False
-            break
-    return res
+    return all([num % i for i in range(2, t)])
 
 numbers = list(map(int,input("Введите числа через пробел: ").split()))
 
@@ -21,4 +16,3 @@ for number in numbers:
 
 print("Primes", primes)
 print("Not Primes", not_primes)
-
